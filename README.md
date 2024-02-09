@@ -49,8 +49,31 @@ void stitch(cv::Mat &src, cv::Mat &warp, int midline) {
 ### Run
 Before running the program, you need to create a folder and put the images inside it.
 
+Example:
+```
+Root/
+├── Data/
+│   ├── img0.JPG
+│   ├── img1.JPG
+│   ├── ...
+│   ├── ...
+│   └── imgn.JPG
+│   
+├── Parallel/
+│   ├── CUDA/
+│   │   ├── main.cu
+│   │   └── Makefile
+│   └── OMP/
+│       ├── main.cpp
+│       └── Makefile
+│
+├── Sequential ...
+│
+└── README.md
+```
+
 ```
 cd Parallel/CUDA
 make 
-./main <folder name from root>
+./main Data
 ```
