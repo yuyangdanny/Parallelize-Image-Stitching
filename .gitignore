@@ -1,0 +1,10 @@
+**/*.log
+**/*.JPG
+**/*.jpg
+**/*.png
+**/*.bin
+**/*.exe
+**/*.dll
+
+build/
+
